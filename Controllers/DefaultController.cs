@@ -13,7 +13,7 @@ namespace basic_web_api.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Api", "is", "up", "and", "running" };
+            return new string[] { "Api", "is", "up", "and", "running", DateTime.UtcNow.ToLongDateString() };
         }
     }
 }

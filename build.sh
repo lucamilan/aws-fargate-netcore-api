@@ -15,8 +15,8 @@ if [ "$a" != "" ]; then
     docker container rm -v $a
 fi
 
-docker build -t $container_name .
+docker build --rm -f Dockerfile -t $container_name .
 
-docker run -d --name $container_name -p 8000:80 $container_name
+docker run -d --name $container_name -p 80:80 $container_name
 
-echo "Up and running at: http://localhost:8000/api"
+echo "Up and running at: http://localhost:80/api"

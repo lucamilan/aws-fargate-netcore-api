@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace basic_web_api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("")]
     public class HealthController : Controller
     {
         // GET api/values
